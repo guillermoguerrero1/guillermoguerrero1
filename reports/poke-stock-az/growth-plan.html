@@ -81,13 +81,21 @@ a { color: var(--accent); }
 a:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
 </style>
 
+<style>
+td.barcell { min-width: 120px; }
+.bar { display: flex; align-items: center; gap: 8px; font: 13px/1 var(--mono); font-variant-numeric: tabular-nums; }
+.bar i { display: block; height: 8px; background: var(--accent); border-radius: 2px; flex: none; }
+tr.hi td { background: var(--accent-soft); }
+.fix { font: 600 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--sun); }
+</style>
+
 <div class="wrap">
 <header>
   <div class="eyebrow">Instagram audit · @poke.stock.az</div>
   <h1>Poke.Stock.AZ Growth Plan</h1>
-  <p class="lede">The account has a good offline foundation: a booth at Arizona's largest monthly card show, giveaways that bring winners to the table, and packs sent to small creators. The Instagram account hasn't caught up yet. This plan uses each show weekend to make content, and uses Instagram to sell and trade between shows.</p>
-  <div class="next"><strong>Next show: Cactus TCG Show, Oct 10–11</strong><span>Delta Hotels Phoenix Mesa · 10 AM–4 PM · free entry · 115+ tables</span></div>
-  <p class="meta">Prepared Oct 1, 2026 · Follower, following and post counts come from the owner (Oct 1). Post history comes from public, search-indexed data, because Instagram blocks direct profile reads. Insights, Stories and DMs were not visible.</p>
+  <p class="lede">Your audience is local, which most small TCG accounts can't say: 93% of followers with a known city are in Arizona. Your posts also reach new people. Almost all growth, though, comes from one giveaway and one show weekend a month, and it stops between them. This plan keeps Instagram busy between shows and turns more visits to your profile into buyers.</p>
+  <div class="next"><strong>Next show: Cactus TCG Show, Oct 10–11</strong><span>Delta Hotels Phoenix Mesa · 10 AM–4 PM · then Power Holiday Showdown, Nov 27–28</span></div>
+  <p class="meta">Prepared Oct 1, 2026 · Data pulled directly from the @poke.stock.az business account through the Instagram Graph API: profile counts, all 13 posts the API returns, per-post insights, and account insights for Sep 3–Oct 1.</p>
 </header>
 
 <section id="snapshot">
@@ -95,24 +103,64 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
   <h2>Account snapshot</h2>
   <div class="stats">
     <div class="stat"><b>427</b><small>followers</small></div>
-    <div class="stat"><b>339</b><small>following</small></div>
-    <div class="stat"><b>15</b><small>posts total</small></div>
-    <div class="stat"><b>1–18</b><small>likes per recent post</small></div>
+    <div class="stat"><b>3,439</b><small>accounts reached, last 28 days</small></div>
+    <div class="stat"><b>92%</b><small>of that reach from non-followers</small></div>
+    <div class="stat"><b>0</b><small>profile link taps, last 28 days</small></div>
   </div>
-  <p><strong>Current bio:</strong> "Pokémon &amp; MTG Cards Arizona · Buy • Sell • Trade", with a Phoenix location. I couldn't find a link-in-bio storefront, Whatnot, or website in public results.</p>
 
-  <h3>Recent activity (indexed)</h3>
   <div class="tbl"><table>
-    <thead><tr><th>Date</th><th>Post</th><th>Result</th></tr></thead>
+    <thead><tr><th>Last 28 days (Sep 3–Oct 1)</th><th>Value</th><th>What it means</th></tr></thead>
     <tbody>
-      <tr><td class="num">Sep 17</td><td>"THIS WEEKEND — WE'RE BACK!" Cactus TCG Show announcement (static)</td><td class="num">1 like · 0 comments</td></tr>
-      <tr><td class="num">Sep 20</td><td>Reel from the booth at Delta Hotels Phoenix Mesa</td><td class="num">18 likes</td></tr>
-      <tr><td class="num">Sep 20</td><td>"WE HAVE A WINNER!" Giveaway winner (@magmar10), prize pickup at the show</td><td class="num">13 likes · 0 comments</td></tr>
-      <tr><td class="num">~Sep 25</td><td>"Find it! Post it! Tag us!" Scavenger-hunt giveaway reel, DM to coordinate pickup</td><td class="num">1 comment</td></tr>
-      <tr><td class="num">Aug–Sep</td><td>Off-platform: packs sent to family rip creators on Facebook (Beforeskoolripz "Two mystery packs. Two brothers. One winner.", a lunch-break rip series at 602 views)</td><td class="num">Credited "Poke Stock Az"</td></tr>
+      <tr><td>Views</td><td class="num">11,309</td><td>Content is being shown plenty</td></tr>
+      <tr><td>Accounts engaged</td><td class="num">158</td><td>Only 4.6% of people reached did anything</td></tr>
+      <tr><td>Profile visits</td><td class="num">447</td><td>People are curious</td></tr>
+      <tr><td>New follows (daily totals)</td><td class="num">≈149</td><td>About 1 in 3 profile visits ends in a follow, which is a healthy rate</td></tr>
+      <tr><td>Profile link and button taps</td><td class="num">0</td><td>No link or contact button gives visitors a way to buy</td></tr>
     </tbody>
   </table></div>
-  <p class="note">Engagement works out to about 0.2%–4% of followers. Local accounts under 1K followers usually get 5–10% when the audience is real and local. The low end, and following 339 accounts against 427 followers, suggest that many followers came from follow-to-enter giveaways and follow-backs rather than from buyers.</p>
+
+  <h3>Growth comes all at once</h3>
+  <p>Of the ≈149 follows in the last 28 days, <strong>94 came in a single day</strong> just before the Sep 19–20 Cactus show, when the giveaway was about to close. Another 17 came on Sep 12. From Sep 21 to Oct 1 the account gained only 4 followers. The account grows at events and stalls between them.</p>
+
+  <h3>Who follows you</h3>
+  <ul>
+    <li><strong>Local:</strong> 334 of 361 followers with a known city are in Arizona. Top cities: Phoenix 113, Mesa 33, Gilbert 31, Glendale 16, San Tan Valley 15, Chandler 15, Tempe 14, Goodyear 13, Scottsdale 12.</li>
+    <li><strong>Adults:</strong> 25–34 make up 45% and 35–44 make up 30%. These are collectors and parents with spending money, not kids.</li>
+    <li>The West Valley (Glendale, Goodyear, Avondale, Buckeye, Surprise, Peoria: 67 followers) is a sizable second group. Plan West Valley shows with that in mind.</li>
+  </ul>
+</section>
+
+<section id="posts">
+  <span class="tab">Every post</span>
+  <h2>Post-by-post performance</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Date</th><th>Post</th><th>Type</th><th>Reach</th><th>Likes</th><th>Cmts</th><th>Shares</th></tr></thead>
+    <tbody>
+      <tr class="hi"><td class="num">Aug 31</td><td>Giveaway: 30th Anniversary ETB (like, share, tag 3, follow; pickup at show)</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:80px"></i>2,298</div></td><td class="num">152</td><td class="num">242</td><td class="num">133</td></tr>
+      <tr><td class="num">Jun 10</td><td>"Arizona TCG Friends — Which event are you attending?"</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:53px"></i>1,512</div></td><td class="num">36</td><td class="num">6</td><td class="num">8</td></tr>
+      <tr><td class="num">Aug 4</td><td>Upcoming shows list (Cactus, AZ Hobby Expo, Power Holiday)</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:36px"></i>1,048</div></td><td class="num">15</td><td class="num">0</td><td class="num">6</td></tr>
+      <tr><td class="num">Jun 16</td><td>Thank-you reel, The Power card show</td><td>Reel</td><td class="barcell"><div class="bar"><i style="width:27px"></i>775</div></td><td class="num">12</td><td class="num">8</td><td class="num">2</td></tr>
+      <tr><td class="num">Jul 27</td><td>Collector's Grid weekend recap</td><td>Reel</td><td class="barcell"><div class="bar"><i style="width:13px"></i>367</div></td><td class="num">15</td><td class="num">0</td><td class="num">1</td></tr>
+      <tr><td class="num">Apr 12</td><td>"Table is nice and set up"</td><td>Reel</td><td class="barcell"><div class="bar"><i style="width:12px"></i>348</div></td><td class="num">13</td><td class="num">2</td><td class="num">0</td></tr>
+      <tr><td class="num">Sep 20</td><td>"WE HAVE A WINNER!" (@magmar10)</td><td>Carousel</td><td class="barcell"><div class="bar"><i style="width:11px"></i>307</div></td><td class="num">18</td><td class="num">1</td><td class="num">12</td></tr>
+      <tr><td class="num">Jun 30</td><td>Updated event schedule</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:10px"></i>292</div></td><td class="num">13</td><td class="num">2</td><td class="num">0</td></tr>
+      <tr><td class="num">Sep 17</td><td>"THIS WEEKEND — WE'RE BACK!" Cactus show</td><td>Carousel</td><td class="barcell"><div class="bar"><i style="width:9px"></i>264</div></td><td class="num">19</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td class="num">May 31</td><td>TBT, Power Summer Splash</td><td>Reel</td><td class="barcell"><div class="bar"><i style="width:9px"></i>246</div></td><td class="num">9</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td class="num">May 19</td><td>Summer Splash announcement</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:7px"></i>212</div></td><td class="num">4</td><td class="num">0</td><td class="num">1</td></tr>
+      <tr><td class="num">Apr 12</td><td>Pewter TCG Card Show announcement</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:4px"></i>119</div></td><td class="num">3</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td class="num">Mar 22</td><td>"Keeping the spirit alive…"</td><td>Photo</td><td class="barcell"><div class="bar"><i style="width:3px"></i>100</div></td><td class="num">6</td><td class="num">0</td><td class="num">0</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Your profile shows 15 posts, but the API returns 13. The other 2 are most likely collab posts that another account owns and lists you on. Instagram doesn't share those with the owner's API. Saves top out at 5 on any post.</p>
+
+  <h3>What the numbers say</h3>
+  <ul>
+    <li><strong>The giveaway is 70% of all interactions</strong> the account has ever had (564 of 804), with 133 shares. Giveaways work. The problem is that nothing keeps the momentum going afterward.</li>
+    <li><strong>Questions beat announcements.</strong> "Which event are you attending?" reached 1,512 people, 7× a typical single-show announcement (119–264). Posts that list several shows did well too (1,048).</li>
+    <li><strong>Your reels aren't working yet.</strong> The 4 reels average 434 reach, about the same as photos. They're table shots and thank-yous with no hook in the first second. Reels with pulls, prices and people should beat them easily.</li>
+    <li><strong>Nobody saves your posts.</strong> No post has more than 5 saves. Saves come from useful content: price lists, buy lists, show calendars people keep.</li>
+    <li><strong>Posting is steady but thin.</strong> 13 posts from Mar 22 to Sep 20 is about 2 a month, almost all of them show announcements. Nothing has been posted since Sep 20.</li>
+  </ul>
 </section>
 
 <section id="audit">
@@ -122,35 +170,34 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
     <div>
       <h3>Keep doing</h3>
       <ul>
-        <li><strong>Monthly booth at the Cactus TCG Show.</strong> Free entry, 115+ tables, and AZFamily coverage bring thousands of local collectors each weekend. Few online-only accounts can reach that audience.</li>
-        <li><strong>Prize pickup at the booth.</strong> Every winner walks to the table, which brings in foot traffic and keeps the giveaway local.</li>
-        <li><strong>Creator seeding.</strong> A few packs sent to family rip creators bring video, a shout-out, and new audiences for little cost.</li>
-        <li><strong>The scavenger hunt.</strong> "Find it, post it, tag us" makes customers create the content. Do this more.</li>
+        <li><strong>A full show calendar.</strong> In six months you've worked Pewter TCG, Power Summer Splash, The Power show, West Valley Card Rally, Collector's Grid, AZ Hobby Expo and three Cactus shows. That's a lot of in-person reach.</li>
+        <li><strong>Giveaways with pickup at the booth.</strong> They brought 2,298 reach and 94 follows in one day, and they bring the winner to your table.</li>
+        <li><strong>Asking your audience questions.</strong> It's your best post that isn't a giveaway.</li>
+        <li><strong>Creator seeding.</strong> Packs sent to family rip creators on Facebook (Beforeskoolripz, a lunch-break rip series) get you mentioned by name.</li>
       </ul>
     </div>
     <div>
       <h3>Fix</h3>
       <ul>
-        <li><strong>Gaps between posts.</strong> 15 posts and a "we're back" relaunch tell new visitors the account isn't active. Posting gaps also reset reach.</li>
-        <li><strong>Bio doesn't prompt action.</strong> It has no show date, no "where to find us", no link, and no way to sell to you. It also mentions MTG, but every post is Pokémon.</li>
-        <li><strong>Name collision.</strong> "Poke Stock" is close to PokeStocked, Poke Stocks, and the restock-alert pages. Searchers expect restock alerts, not a vendor.</li>
-        <li><strong>Static announcement graphics.</strong> These got 1 like. Reels from the booth got about 18×.</li>
-        <li><strong>Giveaways that farm follows.</strong> "Follow + tag friends" brings followers who don't buy, and they pull engagement down.</li>
-        <li><strong>No inventory or buy list.</strong> Followers can't see what you have or what you pay for cards.</li>
+        <li><strong>Zero link taps.</strong> 447 visitors in 28 days, and none could tap through to inventory, a hold form or contact info. This is the cheapest fix.</li>
+        <li><strong>Growth stops between shows.</strong> 4 follows in the 10 days after the Sep show.</li>
+        <li><strong>Mostly announcements.</strong> No inventory, prices or "we buy" posts, so there's no reason to check back or save anything.</li>
+        <li><strong>Reels without a hook.</strong> They open on a table and end on a thank-you.</li>
+        <li><strong>Name collision.</strong> "Poke Stock" reads like the restock-alert pages (PokeStocked, Poke Stocks).</li>
       </ul>
     </div>
   </div>
 
   <h3>Scorecard</h3>
   <div class="tbl"><table>
-    <thead><tr><th>Area</th><th>Status</th><th>Why</th></tr></thead>
+    <thead><tr><th>Area</th><th>Status</th><th>Evidence</th></tr></thead>
     <tbody>
-      <tr><td>Profile &amp; bio</td><td><span class="pill bad">Weak</span></td><td>Generic, no CTA, no link, no next-show info</td></tr>
-      <tr><td>Posting consistency</td><td><span class="pill bad">Weak</span></td><td>15 posts, relaunch after a gap</td></tr>
-      <tr><td>Content format</td><td><span class="pill warn">Mixed</span></td><td>Reels outperform statics; too few reels</td></tr>
-      <tr><td>Audience quality</td><td><span class="pill warn">Mixed</span></td><td>Giveaway-heavy growth, following 339 vs. 427 followers</td></tr>
-      <tr><td>Offline-to-online link</td><td><span class="pill warn">Mixed</span></td><td>Booth exists, but there's no follow incentive at the table</td></tr>
-      <tr><td>Community &amp; partners</td><td><span class="pill good">Strong</span></td><td>Show organizer, co-vendors, and creator seeding are all in place</td></tr>
+      <tr><td>Audience quality</td><td><span class="pill good">Strong</span></td><td>93% Arizona, 75% aged 25–44</td></tr>
+      <tr><td>Discovery</td><td><span class="pill good">Strong</span></td><td>92% of reach from non-followers</td></tr>
+      <tr><td>Profile conversion</td><td><span class="pill bad">Weak</span></td><td>0 link taps from 447 profile visits</td></tr>
+      <tr><td>Consistency</td><td><span class="pill warn">Mixed</span></td><td>About 2 posts/month; none since Sep 20</td></tr>
+      <tr><td>Content usefulness</td><td><span class="pill bad">Weak</span></td><td>Max 5 saves; no inventory or price posts</td></tr>
+      <tr><td>Video</td><td><span class="pill warn">Mixed</span></td><td>Reels average 434 reach, no better than photos</td></tr>
     </tbody>
   </table></div>
 </section>
@@ -159,50 +206,49 @@ a:focus-visible { outline: 2px solid var(--sun); outline-offset: 2px; }
   <span class="tab">Do this week</span>
   <h2>Profile fixes before Oct 10</h2>
   <ol>
+    <li><strong>Add a link and contact buttons</strong> (Edit profile → Links; Contact options → Email/Text). Link to current inventory (a shared sheet is fine), a "hold for pickup at the show" form, and your show calendar.</li>
     <li><strong>Name field</strong> (Instagram search reads it): <code>Poke Stock AZ | Pokémon Cards Phoenix</code></li>
-    <li><strong>Bio</strong>, rewritten to say what you sell, that you buy, and where to find you next:
-      <div class="bio">Pokémon singles · sealed · slabs — Mesa/Phoenix
+    <li><strong>Bio:</strong>
+      <div class="bio">Pokémon singles · sealed · slabs — Phoenix/Mesa
 We BUY &amp; trade: DM photos for an offer
 Next: Cactus TCG Show · Oct 10–11 · Delta Mesa
-↓ Inventory, hold requests, show map</div>
+↓ Inventory, holds, show calendar</div>
     </li>
-    <li><strong>Link:</strong> use Instagram's multi-link (or a free link page) for: current inventory (a shared sheet is fine), "hold for pickup at the show" form, Cactus TCG Show RSVP.</li>
-    <li><strong>Highlights:</strong> Next Show · Inventory · We Buy · Winners · Pulls (customer rips).</li>
-    <li><strong>Pin 3 posts:</strong> (1) where to find us + booth photo, (2) how to sell/trade with us, (3) latest winner.</li>
-    <li><strong>Clean up following:</strong> unfollow non-local, non-hobby accounts picked up through follow-backs. Follow AZ vendors, shops, and collectors instead.</li>
-    <li><strong>Drop "MTG"</strong> unless you'll post Magic content regularly. The account converts better when it does one thing clearly.</li>
+    <li><strong>Highlights:</strong> Show Calendar · Inventory · We Buy · Winners · Pulls.</li>
+    <li><strong>Pin 3 posts:</strong> the Aug 31 giveaway (social proof), a show calendar post, and a "how to sell to us" post.</li>
+    <li><strong>One Piece and MTG:</strong> keep them in the bio only if you bring them to every show. Your audience responds to Pokémon.</li>
   </ol>
 </section>
 
 <section id="strategy">
   <span class="tab">Strategy</span>
-  <h2>Make each show weekend your content</h2>
-  <p>Every month you spend two days at a table with hundreds of collectors walking by. That's where your content comes from. Shoot there, post through the month, and give people a reason to follow from the booth.</p>
+  <h2>Keep it going between shows</h2>
+  <p>Your shows and giveaways already bring new people to the profile. The work now is to give them a reason to stay, save posts and buy in the weeks between.</p>
 
   <h3>Content mix</h3>
-  <div class="mix" role="img" aria-label="Content mix: booth and pulls 35%, inventory drops 25%, buy and trade 20%, community and giveaways 20%">
-    <div style="width:35%;background:var(--accent)">Booth &amp; pulls</div>
+  <div class="mix" role="img" aria-label="Content mix: booth and pulls 35%, inventory and prices 25%, questions and calendar 20%, giveaways 20%">
+    <div style="width:35%;background:var(--accent)">Pulls &amp; booth</div>
     <div style="width:25%;background:var(--sun)">Inventory</div>
-    <div style="width:20%;background:var(--ink)">Buy/trade</div>
-    <div style="width:20%;background:var(--muted)">Community</div>
+    <div style="width:20%;background:var(--ink)">Questions</div>
+    <div style="width:20%;background:var(--muted)">Giveaways</div>
   </div>
-  <p class="legend">35% booth &amp; pulls · 25% inventory drops · 20% buy/trade · 20% community &amp; giveaways</p>
+  <p class="legend">35% pulls &amp; booth reels · 25% inventory &amp; prices · 20% questions &amp; show calendar · 20% giveaways &amp; winners</p>
   <div class="tbl"><table>
-    <thead><tr><th>Pillar</th><th>Formats that fit</th><th>Job</th></tr></thead>
+    <thead><tr><th>Pillar</th><th>Formats that fit</th><th>Fixes</th></tr></thead>
     <tbody>
-      <tr><td><strong>Booth &amp; pulls</strong></td><td>Reels: customer pack rips at the table (ask first), "what $20 gets you at our booth," trade negotiations, the haul before the doors open</td><td>Reach: non-followers discover you</td></tr>
-      <tr><td><strong>Inventory drops</strong></td><td>Carousels of singles/slabs with prices on the image. "Comment SOLD or DM to claim, pick up at the show or ship"</td><td>Sales between shows</td></tr>
-      <tr><td><strong>Buy/trade</strong></td><td>"What we pay for ___ this month," condition-grading quick tips, "would you trade this?" polls in Stories</td><td>Brings in inventory, which is where vendor margin comes from</td></tr>
-      <tr><td><strong>Community</strong></td><td>Winner posts, scavenger hunts, reposts of customer pulls, collab posts with co-vendors</td><td>Trust, shares, repeat visits</td></tr>
+      <tr><td><strong>Pulls &amp; booth</strong></td><td>Reels that open on the card or a face: customer pack rips (ask first), "what $20 gets you at our booth," a trade in 15 seconds</td><td>Reels without a hook</td></tr>
+      <tr><td><strong>Inventory &amp; prices</strong></td><td>Weekly carousel of singles/slabs with prices on the image. "DM to claim, pick up at the show or ship"</td><td>0 saves, 0 link taps</td></tr>
+      <tr><td><strong>Questions &amp; calendar</strong></td><td>"Which show are you hitting?", "What's your chase card?", a monthly AZ show calendar carousel (people save these)</td><td>Your best format besides giveaways, used only once</td></tr>
+      <tr><td><strong>Giveaways &amp; winners</strong></td><td>One per month, tied to a show, pickup at the booth</td><td>Keeps the 94-follow spike, but monthly</td></tr>
     </tbody>
   </table></div>
 
   <h3>Cadence</h3>
   <ul>
-    <li><strong>4 Reels per week</strong>, with all footage shot on show weekends. One show weekend gives you 20–30 clips.</li>
-    <li><strong>1 inventory carousel per week</strong>, every Tuesday, so followers learn when to check.</li>
-    <li><strong>Stories daily</strong>: polls, price checks, "new in," countdown stickers before shows.</li>
-    <li>Cross-post Reels to <strong>TikTok</strong> and <strong>Facebook</strong>. Post show and inventory updates in the <strong>Arizona Pokemon TCG Facebook group</strong> (about 1.2K members).</li>
+    <li><strong>3 posts a week</strong>, up from about 2 a month. Shoot 20–30 clips per show weekend and you'll have enough.</li>
+    <li><strong>Inventory carousel every Tuesday</strong> so followers learn when to look.</li>
+    <li><strong>Stories most days</strong>: polls, "new in," countdown stickers before shows. Stories reach existing followers, who currently see only 294 of your 3,439 reach.</li>
+    <li>Cross-post Reels to TikTok and Facebook. Post your monthly show calendar in the Arizona Pokemon TCG Facebook group.</li>
   </ul>
 </section>
 
@@ -212,72 +258,62 @@ Next: Cactus TCG Show · Oct 10–11 · Delta Mesa
   <div class="tbl"><table>
     <thead><tr><th>When</th><th>Action</th></tr></thead>
     <tbody>
-      <tr><td class="num">T−7 days</td><td>Reel: "We'll be at table __ at the Cactus TCG Show." Add a countdown sticker in Stories. Make it a Collab post with <strong>@cactuscardsllc</strong> so it reaches the show's followers too.</td></tr>
-      <tr><td class="num">T−4 days</td><td>Carousel: "Coming to the show." Your 10 best pieces with prices. "DM to hold for pickup." Pre-sold holds bring buyers to your table.</td></tr>
-      <tr><td class="num">T−1 day</td><td>Story: booth setup, a teaser for the giveaway prize, and a reminder of the follow perk.</td></tr>
-      <tr><td class="num">Show days</td><td>Post a Story every 1–2 hours: pulls, trades, "just got in." Film 20–30 vertical clips. Shoot one Collab Reel with a neighboring vendor (merllowtcg, redeemedrips24 and 2ShortTCG already work this show).</td></tr>
-      <tr><td class="num">At the booth</td><td>A QR sign that says <strong>"Follow @poke.stock.az, show this screen, get a free bulk pack / $5 off $30."</strong> This turns foot traffic into followers who live nearby and buy.</td></tr>
-      <tr><td class="num">T+1 day</td><td>Recap Reel: best pulls and trades of the weekend. Winner post. Tag everyone who appears.</td></tr>
-      <tr><td class="num">T+3 days</td><td>"What didn't sell" carousel at show prices for 48 hours, with shipping or local pickup.</td></tr>
+      <tr><td class="num">T−10 days</td><td>Launch the giveaway (same format as Aug 31, prize pickup at the booth). Make it a Collab post with the show organizer so it reaches their followers too.</td></tr>
+      <tr><td class="num">T−7 days</td><td>Question post: "Coming to [show]? Comment your chase card and I'll try to bring it."</td></tr>
+      <tr><td class="num">T−4 days</td><td>Carousel of your 10 best pieces with prices. "DM to hold for pickup."</td></tr>
+      <tr><td class="num">Show days</td><td>Stories every 1–2 hours. Film 20–30 vertical clips of pulls, trades and the table. Shoot one Collab Reel with a neighboring vendor.</td></tr>
+      <tr><td class="num">At the booth</td><td>QR sign: <strong>"Follow @poke.stock.az, show this screen, get a free bulk pack / $5 off $30."</strong> Visitors to the booth who follow are local buyers by definition.</td></tr>
+      <tr><td class="num">T+1 day</td><td>Winner post, plus a recap Reel that opens on the best pull of the weekend.</td></tr>
+      <tr><td class="num">T+3 to T+21</td><td>Keep the momentum: 3 posts a week from show footage, a Tuesday inventory post, and one question post. This is the stretch that currently gets 0 posts and about 4 follows.</td></tr>
     </tbody>
   </table></div>
 </section>
 
 <section id="giveaways">
   <span class="tab">Giveaways</span>
-  <h2>Giveaways that bring buyers, not just followers</h2>
+  <h2>Giveaways: keep the format, fix the follow-through</h2>
   <ul>
-    <li><strong>One per show,</strong> announced T−7 and drawn on show Sunday. Winners must pick up at the booth. This filters for local people and brings traffic.</li>
-    <li><strong>Entry:</strong> share to Story + comment your chase card. Drop "tag 3 friends," which brings in tagged bots and people from out of state.</li>
-    <li><strong>Prize:</strong> one sealed product people want, plus a "booth credit" second prize. Credit gets people to spend at the table.</li>
-    <li><strong>Keep the scavenger hunt</strong> as the in-person format and repost every entry.</li>
-    <li><strong>Measure it:</strong> followers gained, and how many are still following and engaging 14 days later. If retention drops below 60%, scale it back.</li>
-  </ul>
-</section>
-
-<section id="partners">
-  <span class="tab">Partners</span>
-  <h2>Collabs and creator seeding</h2>
-  <ul>
-    <li><strong>Show organizer (@cactuscardsllc):</strong> ask for a vendor spotlight and use Collab posts for every show announcement. Their reels already reach the exact audience you need.</li>
-    <li><strong>Co-vendors:</strong> trade shout-outs and do a monthly "vendor trade-off" reel.</li>
-    <li><strong>Family and micro rip creators</strong> (Beforeskoolripz, lunch-break rippers, "1 pack a day until 1K" accounts): keep seeding 2–4 packs a month. In return, ask them to tag <strong>@poke.stock.az</strong> on Instagram (not just "Poke Stock Az" on Facebook) and to mention the next show.</li>
-    <li><strong>Local shops that don't vend at shows:</strong> trade overflow and refer buy offers to each other.</li>
+    <li><strong>Keep pickup at the show.</strong> It's why your followers are 93% local.</li>
+    <li><strong>Run one a month</strong>, not just when you have a big product. Smaller prizes (a booster bundle plus booth credit) are fine. The Aug 31 giveaway's 133 shares did the reaching for you.</li>
+    <li><strong>Swap "tag 3 friends" for "tag 1 friend who'd come to the show."</strong> That keeps the reach and gets more people who'll actually come.</li>
+    <li><strong>The day after the draw, post something useful</strong> (inventory with prices or a show calendar) so new followers see a reason to stay.</li>
+    <li><strong>Track:</strong> follows on giveaway day vs. follower count 14 days later (Insights → Followers).</li>
   </ul>
 </section>
 
 <section id="calendar">
   <span class="tab">90 days</span>
   <h2>Q4 calendar</h2>
+  <p>Your current pace is about 150 follows a month, almost all in one spike. The targets below assume one giveaway per month plus 3 posts a week between shows.</p>
   <div class="tbl"><table>
     <thead><tr><th>Window</th><th>Focus</th><th>Follower target</th></tr></thead>
     <tbody>
-      <tr><td class="num">Oct 1–9</td><td>Profile fixes, print the QR sign, 3 pre-show posts, Collab with the show</td><td class="num">475</td></tr>
-      <tr><td class="num">Oct 10–11</td><td>Show 1: QR perk at the booth, 20–30 clips, giveaway draw</td><td class="num">650</td></tr>
-      <tr><td class="num">Oct 12–Nov 20</td><td>4 Reels/week from show footage, weekly inventory drops, "we buy" series, Halloween-themed pulls</td><td class="num">900</td></tr>
-      <tr><td class="num">Nov 21–22</td><td>Show 2: holiday gift-bundle table ($25 / $50 / $100), Black Friday holds</td><td class="num">1,150</td></tr>
-      <tr><td class="num">Nov 23–Dec 18</td><td>Gift guide carousels ("for the 8-year-old," "for the collector"), ship-by dates, holds for pickup</td><td class="num">1,350</td></tr>
-      <tr><td class="num">Dec 19–20</td><td>Show 3: last-minute gifts, year-end recap reel, big giveaway</td><td class="num">1,600</td></tr>
+      <tr><td class="num">Oct 1–9</td><td>Add the link and buttons, rewrite the bio, print the QR sign, launch the October giveaway, post a question</td><td class="num">475</td></tr>
+      <tr><td class="num">Oct 10–11</td><td>Cactus TCG Show: QR perk, 20–30 clips, giveaway draw</td><td class="num">650</td></tr>
+      <tr><td class="num">Oct 12–Nov 20</td><td>3 posts/week from show footage, Tuesday inventory, "we buy" series, Halloween pulls. Cactus Nov 21–22 giveaway launches Nov 11</td><td class="num">900</td></tr>
+      <tr><td class="num">Nov 21–22</td><td>Cactus TCG Show: holiday gift bundles ($25 / $50 / $100)</td><td class="num">1,050</td></tr>
+      <tr><td class="num">Nov 27–28</td><td>Power Holiday Showdown, Mesa Convention Center (already on your calendar): Black Friday weekend, gift bundles, holds</td><td class="num">1,250</td></tr>
+      <tr><td class="num">Dec 19–20</td><td>Cactus TCG Show: last-minute gifts, year-end recap reel, big giveaway</td><td class="num">1,600</td></tr>
     </tbody>
   </table></div>
-  <p class="note">Dates are from thecactustcgshow.com. One Downtown Mesa listing gives Oct 17–18 instead of Oct 10–11, so confirm with the organizer before printing anything. The Chandler/Gilbert Card Show (Knights of Columbus, Oct 24) is a smaller add-on if you have stock and staff for it.</p>
+  <p class="note">Cactus dates are from thecactustcgshow.com. One Downtown Mesa listing says Oct 17–18 instead of Oct 10–11, so confirm with the organizer before printing anything.</p>
 </section>
 
 <section id="kpis">
   <span class="tab">Measure</span>
-  <h2>What to track weekly</h2>
+  <h2>What to track</h2>
   <div class="tbl"><table>
-    <thead><tr><th>Metric</th><th>Where</th><th>Target by Dec</th></tr></thead>
+    <thead><tr><th>Metric</th><th>Now (28 days)</th><th>Target by Dec</th></tr></thead>
     <tbody>
-      <tr><td>Followers (and % local)</td><td>Insights → Audience → Top locations</td><td class="num">1,600 · 70%+ AZ</td></tr>
-      <tr><td>Avg Reel views</td><td>Insights → Content</td><td class="num">1,000+</td></tr>
-      <tr><td>Reach from non-followers</td><td>Per-Reel Insights</td><td class="num">50%+</td></tr>
-      <tr><td>Engagement rate</td><td>(likes + comments + saves + shares) ÷ reach</td><td class="num">6%+</td></tr>
-      <tr><td>Buy/sell DMs</td><td>Count manually, or tag with DM labels</td><td class="num">15+/week</td></tr>
-      <tr><td>Booth QR claims</td><td>Tally sheet at the table</td><td class="num">75+ per show</td></tr>
-      <tr><td>Holds picked up at the show</td><td>Hold sheet</td><td class="num">10+ per show</td></tr>
+      <tr><td>Followers</td><td class="num">427</td><td class="num">1,600 · 90%+ AZ</td></tr>
+      <tr><td>Follows in the 3 weeks after a show</td><td class="num">≈4</td><td class="num">75+</td></tr>
+      <tr><td>Profile link taps</td><td class="num">0</td><td class="num">60+/month</td></tr>
+      <tr><td>Accounts engaged ÷ reach</td><td class="num">4.6%</td><td class="num">8%+</td></tr>
+      <tr><td>Saves per post (median)</td><td class="num">0</td><td class="num">5+</td></tr>
+      <tr><td>Avg Reel reach</td><td class="num">434</td><td class="num">1,500+</td></tr>
+      <tr><td>Booth QR claims</td><td class="num">n/a</td><td class="num">75+ per show</td></tr>
     </tbody>
   </table></div>
-  <p class="note">To refine these targets, export 30 days of Instagram Insights (Professional Dashboard → Insights) and send me the follower count, reach, and top posts. I'll compare against this baseline after the Oct 10–11 show.</p>
+  <p class="note">Your Instagram account is connected, so I can pull these numbers again after the Oct 10–11 show and compare them with this baseline.</p>
 </section>
 </div>
